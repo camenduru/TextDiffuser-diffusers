@@ -78,7 +78,7 @@ from setuptools import find_packages, setup
 # 1. all dependencies should be listed here with their version requirements if any
 # 2. once modified, run: `make deps_table_update` to update src/diffusers/dependency_versions_table.py
 _deps = [
-    "Pillow",  # keep the PIL.Image.Resampling deprecation away
+    # "Pillow",  # keep the PIL.Image.Resampling deprecation away
     "accelerate>=0.11.0",
     "compel==0.1.8",
     "black~=23.1",
@@ -222,7 +222,7 @@ install_requires = [
     deps["numpy"],
     deps["regex"],
     deps["requests"],
-    deps["Pillow"],
+    # deps["Pillow"],
 ]
 
 setup(
